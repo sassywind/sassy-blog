@@ -4,11 +4,6 @@ export default {
   target: process.env.NODE_ENV === "production" ? "static" : "server",
   mode: process.env.NODE_ENV === "production" ? "universal" : "spa",
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: "universal",
-  /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
