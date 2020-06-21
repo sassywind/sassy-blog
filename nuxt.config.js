@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export default {
-  target: "static",
+  target: process.env.NODE_ENV === "production" ? "static" : "server",
+  mode: process.env.NODE_ENV === "staging" ? "universal" : "spa",
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
